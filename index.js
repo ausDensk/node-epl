@@ -151,6 +151,15 @@ function EPL (options) {
 		return self;
 	};
 	
+    self.clearValues = function () {
+	    self.output = "";
+	    self.font = "5";
+	    self.xOffset = 0;
+	    self.yOffset = 0;
+	    self.bookmarks = {};
+        return self;
+    };
+
 	self.start = function () {
 		self.commands.n();
 		return self;
